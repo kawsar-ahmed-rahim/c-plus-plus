@@ -372,4 +372,53 @@ int main(){
 }
 
 //! hallow diamond pattern
-           
+        //    *
+        //   * *
+        //  *   *
+        // *     *
+        //  *   *
+        //   * *
+        //    *
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 4; // number of rows in the upper half
+
+    // upper half
+    for (int i = 0; i < n; i++) {
+        // print spaces
+        for (int j = 0; j < n - i - 1; j++) {
+            cout << " ";
+        }
+        cout << "*";
+        if (i != 0) {
+                // print spaces
+                for (int j = 0; j < 2 * i - 1; j++) {
+                    cout << " ";
+                }
+                cout << "*";
+            }
+
+    // lower half
+    for (int i = 0; i <= n - 1; i++) {
+        // print spaces
+        for (int j = 0; j <= i+1; j++) {
+            cout << " ";
+        }
+        cout << "*";
+        if (i != n - 2) {   
+            // space 
+            for (int j = 0; j < 2 * (n - i - 1) - 5; j++) {
+                cout << " ";
+            }
+                    cout << "*";
+
+
+        }      
+          cout << "\n";
+    }
+
+    return 0;
+}
