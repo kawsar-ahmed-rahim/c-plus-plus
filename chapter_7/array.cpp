@@ -1,5 +1,6 @@
 //! basic
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int main() {
@@ -67,4 +68,48 @@ int main() {
     cout << "largest" << largest << endl;
     return 0;
 
+}
+
+//! linear search
+
+int linearSearch(int arr[], int sz, int target){
+    for(int i=0; i<sz; i++){
+        if(arr[i] == target){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main() {
+    int arr[] = {2, 4, 5, 8};
+    int sz = 4;
+    int target = 8;
+
+    cout << linearSearch(arr, sz, target) << endl;
+    return 0;
+}
+
+//! reverse an array
+
+void reverseArray(int arr[], int sz){
+    int start = 0, end = sz-1;
+
+    while(start < end){
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    int arr[] = {3, 4, 5, 6, 7};
+    int sz = 7;
+
+    reverseArray(arr, sz);
+
+    for(int i=0; i<sz; i++){
+        cout << arr[i] << endl;
+        return 0;
+    }
 }
