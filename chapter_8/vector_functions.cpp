@@ -49,7 +49,8 @@ int main() {
 //! cout << vec.at(0) << endl;
 
 //! single number
-
+// n^n=0
+//n^1=n
 int singleNumber(vector<int>& nums) {
     int ans = 0;
 

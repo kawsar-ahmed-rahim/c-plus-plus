@@ -18,7 +18,7 @@ int main() {
 //! loop in vector
 
 int main() {
-    vector <int> vec (5,0);
+    vector<int> vec (5,0);
 
     for(int i : vec){
         cout << i << endl;
