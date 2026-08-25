@@ -18,7 +18,7 @@ int main() {
                 //cout << arr[i];
             //};
             currSum +=arr[end];
-            maxSum = max(currSum, currSum);
+            maxSum = max(currSum, maxSum);
             
             //cout << " ";
         };

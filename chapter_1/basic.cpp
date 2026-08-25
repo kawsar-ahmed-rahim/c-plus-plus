@@ -16,5 +16,5 @@ int main() {
 }
 
 //g++ basic.cpp
-//./a.out
-//or g++ basic.cpp && ./a.out
+//.\a.exe
+//or g++ basic.cpp && .\a.exe
