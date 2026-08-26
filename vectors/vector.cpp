@@ -2,7 +2,7 @@
 
 // vector<int>vec;
 // vector<int>vec={1,2,3};
-// vector<int>vec(3,0)
+// vector<int>vec(3,0) // size, element
 
 //! basic
 
@@ -35,3 +35,6 @@ int main() {
         return 0;
 
 }
+
+
+//! g++ -std=c++11 vector.cpp && ./a.out

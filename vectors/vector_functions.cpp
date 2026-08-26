@@ -51,11 +51,24 @@ int main() {
 //! single number
 // n^n=0
 //n^1=n
+
+
 int singleNumber(vector<int>& nums) {
     int ans = 0;
 
-    for(int val : nums) {
-        ans  = ans ^ val;
+    for (int val : nums) {
+        ans = ans ^ val;
     }
+
     return ans;
-};
+}
+
+int main() {
+    vector<int> nums = {4, 1, 2, 1, 2};
+
+    int result = singleNumber(nums);
+
+    cout << "Single number: " << result << endl;
+
+    return 0;
+}
