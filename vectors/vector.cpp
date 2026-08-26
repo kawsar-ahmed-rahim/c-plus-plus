@@ -35,7 +35,3 @@ int main() {
         return 0;
 
 }
-
-
-
-//! g++ -std=c++11 vector.cpp && ./a.out
