@@ -1,5 +1,4 @@
 //! syntax
-
 // vector<int>vec;
 // vector<int>vec={1,2,3};
 // vector<int>vec(3,0) // size, element
@@ -27,7 +26,7 @@ int main() {
 }
 
 int main() {
-    vector <char> vec= {'a', 'b'};
+    vector <char> vec= {'a', 'b'}; 
 
     for(char i : vec) {
         cout << i << endl;
