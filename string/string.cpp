@@ -1,53 +1,48 @@
-//! character array
-//! string: use of strlen
+//! string
 #include <iostream>
 #include <cstring>
+#include <string>
 using namespace std;
 
-int main(){
-    char str[] = "Hello, World!";
-    cout << strlen(str) << endl;
-    cout << str[2] << endl;
-
-    return 0;
-}
-
-// input and output
 int main() {
-    char str[100];
-    cin >> str;
+    string str = "Hello, World!";
+    cout << str.length() << endl;
     cout << str << endl;
 
     return 0;
 }
 
-// input out put a full line
-int main() {
-    char str[100];
-    cin.getline(str, 100);// name, length, delimiter
-    cout << str << endl;
+//! concatenation
+int main() {    
+    
+    string str1 = "Hello, ";
+    string str2 = "World!";
+    string str3 = str1 + str2;
+    cout << str3 << endl;
 
     return 0;
-} 
+}
 
-// print all characters in a string
+//! length of a string
 int main() {
-    char str[100];
-    cin.getline(str, 100);
-    // for(int i = 0; i < strlen(str); i++){
-    //     cout << str[i] << endl;
+    string str;
+    getline(cin, str);
+    cout << str.length() << endl;
+
+    return 0;
+}
+
+//! print all characters in a string
+int main() {
+    string str;
+    getline(cin, str);
+    // for(char ch : str){
+    //     cout << ch << endl;
     // }
 
-    for(char ch : str){
-        if(ch == '\0') break;
-        cout << ch << endl;
+    for(int i = 0; i < str.length(); i++){
+        cout << str[i] << endl;
     }
-    int len = 0;
-
-    for(int i = 0; i < str[i] != '\0'; i++){
-       len++;
-     }
-     cout << len << endl;
 
     return 0;
 }
